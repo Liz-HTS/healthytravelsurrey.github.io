@@ -25,9 +25,10 @@ $brand-light: #F8F9FA;
    ------------------------- */
 
 /* 
-   Apply the subtle white-paper texture you uploaded.
-   Place the texture file at:
-   assets/white paper.jpg
+body {
+  background: var(--main-bg) url("/assets/paper-texture.jpg") repeat;
+  background-size: 600px;
+}
 */
 
 body {
