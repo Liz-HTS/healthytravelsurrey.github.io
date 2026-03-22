@@ -1,1 +1,163 @@
+/* ----------------------------------------------------------
+   Healthy Travel Surrey — Custom Styling
+   ---------------------------------------------------------- */
 
+/* -------------------------
+   Brand Colours
+   ------------------------- */
+$brand-teal: #1F8A8A;
+$brand-green: #6BBF59;
+$brand-dark: #2A2A2A;
+$brand-light: #F8F9FA;
+
+/* Override Chirpy theme variables */
+:root {
+  --main-bg: #F8F9FA;
+  --text-color: #2A2A2A;
+  --link-color: #1F8A8A;
+  --btn-primary-bg: #1F8A8A;
+  --btn-primary-color: #ffffff;
+  --btn-outline-color: #1F8A8A;
+}
+
+/* -------------------------
+   Background Texture
+   ------------------------- */
+
+/* 
+   Apply the subtle white-paper texture you uploaded.
+   Place the texture file at:
+   assets/img/paper-texture.jpg
+*/
+
+body {
+  background: var(--main-bg) url("/assets/img/paper-texture.jpg") repeat;
+  background-size: 600px; /* soft, subtle scale */
+  color: var(--text-color);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* -------------------------
+   Headings
+   ------------------------- */
+
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------
+   Section Spacing
+   ------------------------- */
+
+section, .page-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+hr {
+  margin: 3rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Soft section divider */
+.section-divider {
+  height: 1px;
+  background: #e6e6e6;
+  margin: 3rem 0;
+}
+
+/* -------------------------
+   Links
+   ------------------------- */
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------
+   Buttons
+   ------------------------- */
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: $brand-teal;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: darken($brand-teal, 8%);
+}
+
+.btn-outline {
+  border: 2px solid $brand-teal;
+  color: $brand-teal !important;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: $brand-teal;
+  color: #ffffff !important;
+}
+
+/* -------------------------
+   Logo Styling
+   ------------------------- */
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-title img {
+  height: 48px;
+  width: auto;
+}
+
+/* -------------------------
+   Smooth Scrolling
+   ------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------------------
+   Columns (for “What we do”)
+   ------------------------- */
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* -------------------------
+   Footer
+   ------------------------- */
+
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #e0e0e0;
+}
